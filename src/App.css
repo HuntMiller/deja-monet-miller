@@ -2,37 +2,45 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+form{
+  padding: 0 2.5rem 0 2.5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1{
+  font-size: 6vw;
+  font-family: 'Pacifico', cursive;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+p{
+  font-size: 3.5vw;
+  font-family: 'Dancing Script', cursive;
 }
 
-.App-link {
-  color: #61dafb;
+button {
+  background: transparent;
+  border: none;
+  outline: transparent;
+  transition: opacity 0.5s ease-in-out;
 }
 
-@keyframes App-logo-spin {
+button svg {
+  width: 10vw !important;
+  height: auto !important;
+  color: #e36387;
+  cursor: pointer;
+  animation-name: beat;
+  animation-duration: 1.5s;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+  -webkit-filter: drop-shadow(0 0 2rem #ffeb99);
+  filter: drop-shadow(0 0 2rem #ffeb99);
+}
+
+@keyframes beat{
   from {
-    transform: rotate(0deg);
+    transform: scale(1.0);
   }
   to {
-    transform: rotate(360deg);
+    transform: scale(0.8);
   }
 }
